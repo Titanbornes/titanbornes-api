@@ -2,7 +2,7 @@ require('dotenv').config()
 const mongoose = require('mongoose')
 const colors = require('colors')
 const users = require('./data/users')
-const User = require('./models/userModel')
+const Token = require('./models/tokenModel')
 const connectDB = require('./config/db')
 
 connectDB()
