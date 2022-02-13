@@ -19,6 +19,8 @@
 	},
 	"dependencies": {
 		"axios": "^0.21.1",
+		"canvas": "^2.9.0",
+		"canvas-constructor": "^5.0.2",
 		"colors": "^1.4.0",
 		"cors": "^2.8.5",
 		"dotenv": "^8.2.0",

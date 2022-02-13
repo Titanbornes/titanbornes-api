@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 5000
 
 const { notFound, errorHandler } = require('./middleware/errorMiddleware') // Middlewares
 const imageRoutes = require('./routes/imageRoutes') // Routes
-const connectDB = require('./handlers/databaseHandler') // Handlers
+const connectDB = require('./functions/databaseHandler') // Handlers
 
 connectDB()
 
