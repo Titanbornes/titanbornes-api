@@ -1,13 +1,13 @@
 const path = require('path')
 const { Canvas } = require('canvas-constructor/cairo')
 const canvas = require('canvas')
-const Token = require('../models/tokenModel')
 
-module.exports = async function generateArtwork(tokenId) {
+const buildTraits = require('./buildTraits')
+
+module.exports = async function buildArtwork(tokenId) {
 	try {
-		const token = await Token.findOne({
-			tokenId,
-		})
+		const traits = await buildTraits(tokenId)
+		console.log(traits)
 
 		const eagle = await canvas.loadImage(
 			path.resolve('public/images/eagle.png')
