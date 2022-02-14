@@ -1,5 +1,5 @@
 const Token = require('./models/tokenModel')
-const connectDatabase = require('./functions/databaseHandler')
+const connectDatabase = require('./functions/handlers/connectDatabase')
 const randomNumberInRange = require('./functions/helpers/randomNumberInRange')
 const colors = require('colors')
 require('dotenv').config()
@@ -15,8 +15,14 @@ const importData = async () => {
 		for (let i = 0; i < 10; i++) {
 			data.push({
 				tokenId: i,
-				faction:
-					randomNumberInRange(0, 1) == 0 ? 'Reapers' : 'Tricksters',
+				name: `Titanborne #${i}`,
+				description: 'On-Chain Storytelling Experiment',
+				attributes: {
+					faction:
+						randomNumberInRange(0, 1) == 0
+							? 'Reapers'
+							: 'Tricksters',
+				},
 			})
 		}
 

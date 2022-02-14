@@ -5,23 +5,8 @@ const tokenSchema = mongoose.Schema(
 		owner: {
 			type: String,
 		},
-		burnt: {
-			type: Boolean,
-			default: false
-		},
 		tokenId: {
 			type: String,
-		},
-		faction: {
-			type: String,
-		},
-		fusionCount: {
-			type: Number,
-			default: 0,
-		},
-		berserk: {
-			type: Boolean,
-			default: true
 		},
 		name: {
 			type: String,
@@ -29,13 +14,38 @@ const tokenSchema = mongoose.Schema(
 		description: {
 			type: String,
 		},
-		traits: {
-			eyes: {
+		attributes: {
+			faction: {
+				type: String,
+			},
+			fusionCount: {
 				type: Number,
+				default: 0,
+			},
+			berserk: {
+				type: Boolean,
+				default: true,
+			},
+			generation: {
+				type: Number,
+				default: 0,
+			},
+			background: {
+				type: String,
+				default: 'Maroon'
+			},
+			eyes: {
+				type: String,
+				default: 'Black',
 			},
 			mask: {
-				type: Number,
+				type: String,
+				default: 'None',
 			},
+		},
+		burnt: {
+			type: Boolean,
+			default: false,
 		},
 	},
 	{
