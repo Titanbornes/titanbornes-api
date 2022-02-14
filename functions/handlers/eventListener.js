@@ -2,6 +2,7 @@ const { ethers, providers, utils, Wallet } = require('ethers')
 const getContract = require('../helpers/getContract')
 const getProvider = require('./getProvider')
 require('dotenv').config()
+const colors = require('colors')
 
 module.exports = async function eventListener() {
 	try {
@@ -16,6 +17,6 @@ module.exports = async function eventListener() {
 			console.log("Transfer");
 		})
 	} catch (error) {
-		console.log(error)
+		console.error(`${error}`.red.inverse)
 	}
 }

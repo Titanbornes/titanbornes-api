@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+const colors = require('colors')
 
 module.exports = async function connectsDatabase() {
   try {

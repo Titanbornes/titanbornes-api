@@ -1,3 +1,5 @@
+const colors = require('colors')
+
 module.exports = async function buildMetadata(data) {
 	try {
 		const { description, name, attributes } = data
@@ -20,6 +22,6 @@ module.exports = async function buildMetadata(data) {
 			image: `https://titanbornes.herokuapp.com/api/images/${data.tokenId}`,
 		}
 	} catch (error) {
-		console.log(error)
+		console.error(`${error}`.red.inverse)
 	}
 }

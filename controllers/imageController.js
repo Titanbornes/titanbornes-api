@@ -1,5 +1,6 @@
 const asyncHandler = require('express-async-handler')
 const jwt = require('jsonwebtoken')
+const colors = require('colors')
 const axios = require('axios')
 const url = require('url')
 require('dotenv').config()
@@ -18,7 +19,7 @@ const getImage = asyncHandler(async (req, res) => {
 		res.set({ 'Content-Type': 'image/png' })
 		res.send(image)
 	} catch (error) {
-		console.log(error)
+		console.error(`${error}`.red.inverse)
 	}
 })
 

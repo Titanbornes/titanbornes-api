@@ -1,5 +1,6 @@
 const { ethers, providers, utils, Wallet } = require('ethers')
 require('dotenv').config()
+const colors = require('colors')
 
 module.exports = async function getProvider() {
 	try {
@@ -15,6 +16,6 @@ module.exports = async function getProvider() {
 
 		return { network, provider, wallet }
 	} catch (error) {
-		console.log(error)
+		console.error(`${error}`.red.inverse)
 	}
 }

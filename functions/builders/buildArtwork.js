@@ -1,26 +1,26 @@
 const path = require('path')
 const { Canvas } = require('canvas-constructor/cairo')
 const canvas = require('canvas')
-
+const colors = require('colors')
 const buildTraits = require('./buildTraits')
 
 module.exports = async function buildArtwork(tokenId) {
 	try {
 		const traits = await buildTraits(tokenId)
 
-		const eagle = await canvas.loadImage(
-			path.resolve('public/images/eagle.png')
+		const base = await canvas.loadImage(
+			path.resolve('public/images/base.png')
 		)
 
-		const apple = await canvas.loadImage(
-			path.resolve('public/images/apple.png')
+		const logo = await canvas.loadImage(
+			path.resolve('public/images/logo.png')
 		)
 
-		return new Canvas(2583, 2010)
-			.printImage(eagle, 0, 0, 2583, 2010)
-			.printImage(apple, 0, 0, 1010, 963)
+		return new Canvas(793, 850)
+			.printImage(base, 0, 0, 793, 850)
+			.printImage(logo, 793 / 10, 850 / 1.4, 867 / 3, 480 / 3)
 			.toBuffer()
 	} catch (error) {
-		console.log(error)
+		console.error(`${error}`.red.inverse)
 	}
 }
