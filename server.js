@@ -9,10 +9,11 @@ const PORT = process.env.PORT || 5000
 
 const { notFound, errorHandler } = require('./middleware/errorMiddleware') // Middlewares
 const imageRoutes = require('./routes/imageRoutes') // Routes
-const connectDB = require('./functions/databaseHandler') // Handlers
+const connectDatabase = require('./functions/handlers/connectDatabase') // Handlers
+const eventListener = require('./functions/handlers/eventListener')
 
-connectDB()
-
+connectDatabase()
+eventListener()
 const app = express()
 
 if (process.env.NODE_ENV === 'development') {
@@ -25,7 +26,7 @@ app.use(express.json())
 app.use('/api/images', imageRoutes)
 app.use('/uploads', express.static(path.join(resolvedDirectory, '/uploads')))
 app.get('/', (req, res) => {
-  res.send('API is running....')
+	res.send('API is running....')
 })
 
 app.use(notFound)

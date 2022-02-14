@@ -4,7 +4,7 @@ const axios = require('axios')
 const url = require('url')
 require('dotenv').config()
 const path = require('path')
-const buildArtwork = require('../functions/buildArtwork')
+const buildArtwork = require('../functions/builders/buildArtwork')
 
 // @desc    Connect a new user
 // @route   POST /api/users/connect

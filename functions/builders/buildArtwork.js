@@ -7,7 +7,6 @@ const buildTraits = require('./buildTraits')
 module.exports = async function buildArtwork(tokenId) {
 	try {
 		const traits = await buildTraits(tokenId)
-		console.log(traits)
 
 		const eagle = await canvas.loadImage(
 			path.resolve('public/images/eagle.png')

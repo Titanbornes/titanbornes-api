@@ -1,7 +1,7 @@
-const Token = require('../models/tokenModel')
+const Token = require('../../models/tokenModel')
 const colors = require('colors')
 
-const seededRandomNumberInRange = require('./seededRandomNumberInRange')
+const seededRandomNumberInRange = require('../helpers/seededRandomNumberInRange')
 
 module.exports = async function buildTraits(tokenId) {
 	try {
