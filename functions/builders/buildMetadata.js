@@ -2,15 +2,15 @@ const colors = require('colors')
 
 module.exports = async function buildMetadata(data) {
 	try {
-		const { description, name, attributes } = data
+		const { description, name, attributes: raw } = data
 
-		let constructedAttributes = []
+		let attributes = []
 
-		for (var key in attributes) {
-			if (attributes.hasOwnProperty(key)) {
-				constructedAttributes.push({
+		for (var key in raw) {
+			if (raw.hasOwnProperty(key)) {
+				attributes.push({
 					trait_type: key,
-					value: attributes[key],
+					value: raw[key],
 				})
 			}
 		}
@@ -18,7 +18,7 @@ module.exports = async function buildMetadata(data) {
 		return {
 			description,
 			name,
-			constructedAttributes,
+			attributes,
 			image: `https://titanbornes.herokuapp.com/api/images/${data.tokenId}`,
 		}
 	} catch (error) {
