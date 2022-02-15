@@ -5,7 +5,7 @@ const axios = require('axios')
 const url = require('url')
 require('dotenv').config()
 const path = require('path')
-const buildArtwork = require('../functions/builders/buildArtwork')
+const buildImage = require('../functions/builders/buildImage')
 
 // @desc    Connect a new user
 // @route   POST /api/users/connect
@@ -14,7 +14,7 @@ const getImage = asyncHandler(async (req, res) => {
 	try {
 		const tokenId = req.params.tokenId
 
-		const image = await buildArtwork(tokenId)
+		const image = await buildImage(tokenId)
 
 		res.set({ 'Content-Type': 'image/png' })
 		res.send(image)

@@ -1,25 +1,34 @@
 const colors = require('colors')
+const { tempTokenURIs } = require('../handlers/createTempData')
 
-module.exports = async function buildMetadata(data) {
+module.exports = async function buildMetadata(tokenId, data) {
 	try {
-		const { description, name, attributes: raw } = data
+		if (tempTokenURIs[tokenId]) {
+			return tempTokenURIs[tokenId]
+		} else {
+			const { description, name, attributes: raw } = data
 
-		let attributes = []
+			let attributes = []
 
-		for (var key in raw) {
-			if (raw.hasOwnProperty(key)) {
-				attributes.push({
-					trait_type: key,
-					value: raw[key],
-				})
+			for (var key in raw) {
+				if (raw.hasOwnProperty(key)) {
+					attributes.push({
+						trait_type: key,
+						value: raw[key],
+					})
+				}
 			}
-		}
 
-		return {
-			description,
-			name,
-			attributes,
-			image: `https://titanbornes.herokuapp.com/api/images/${data.tokenId}`,
+			const tokenURI =  {
+				description,
+				name,
+				attributes,
+				image: `https://titanbornes.herokuapp.com/api/images/${data.tokenId}`,
+			}
+
+			tempTokenURIs[tokenId] = tokenURI
+
+			return tokenURI
 		}
 	} catch (error) {
 		console.error(`${error}`.red.inverse)

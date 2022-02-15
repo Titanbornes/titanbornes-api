@@ -20,7 +20,7 @@ const getURI = asyncHandler(async (req, res) => {
 			tokenId,
 		})
 		
-		res.json(await buildMetadata(data))
+		res.json(await buildMetadata(tokenId, data))
 	} catch (error) {
 		console.error(`${error}`.red.inverse)
 	}
