@@ -1,5 +1,4 @@
 const asyncHandler = require('express-async-handler')
-const jwt = require('jsonwebtoken')
 const colors = require('colors')
 const axios = require('axios')
 const url = require('url')
