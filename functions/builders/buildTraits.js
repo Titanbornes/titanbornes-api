@@ -3,13 +3,15 @@ const seededRandomNumberInRange = require('../helpers/seededRandomNumberInRange'
 
 module.exports = async function buildTraits(tokenId) {
 	try {
-		const mask = seededRandomNumberInRange(
-			tokenId + token.faction + 'mask',
-			5,
-			9
-		)
+		// const mask = seededRandomNumberInRange(
+		// 	tokenId + token.faction + 'mask',
+		// 	5,
+		// 	9
+		// )
 
-		return { mask }
+		const animated = false
+
+		return { animated }
 	} catch (error) {
 		console.error(`${error}`.red.inverse)
 	}
