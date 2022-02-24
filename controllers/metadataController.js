@@ -1,10 +1,9 @@
 const asyncHandler = require('express-async-handler')
-const axios = require('axios')
 const colors = require('colors')
 const url = require('url')
-require('dotenv').config()
 const path = require('path')
 const buildMetadata = require('../functions/builders/buildMetadata')
+const querySubgraph = require('../functions/helpers/querySubgraph')
 
 // @desc    Connect a new user
 // @route   POST /api/users/connect
@@ -13,26 +12,13 @@ const getMetadata = asyncHandler(async (req, res) => {
 	try {
 		const tokenId = req.params.tokenId
 
-		const result = await axios.post(
-			'https://api.thegraph.com/subgraphs/name/accretence/foundationsubgraph',
-			{
-				query: `{
-					tokens(where:{tokenID: ${tokenId}}) {
-						id
-						tokenID
-						generation
-						fusionCount
-						owner {
-							id
-						}
-					}
-				}`,
-			}
-		)
+		const tokenSubgraphData = await querySubgraph(tokenId)
 
-		data = result.data.data.tokens[0]
-
-		res.json(await buildMetadata(tokenId, data))
+		if (!tokenSubgraphData) {
+			res.sendStatus(404)
+		} else {
+			res.json(await buildMetadata(tokenId, tokenSubgraphData))
+		}
 	} catch (error) {
 		console.error(`${error}`.red.inverse)
 	}

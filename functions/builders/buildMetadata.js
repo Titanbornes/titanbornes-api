@@ -1,31 +1,27 @@
 const colors = require('colors')
+const buildTraits = require('./buildTraits')
 
-module.exports = async function buildMetadata(tokenId, data) {
+module.exports = async function buildMetadata(tokenId, tokenSubgraphData) {
 	try {
-		const { generation, fusionCount } = data
+		let attributes = []
 
-			const raw = {
-				generation,
-				fusionCount
+		const traits = await buildTraits(tokenId, tokenSubgraphData)
+
+		for (let trait in traits) {
+			if (traits.hasOwnProperty(trait)) {
+				attributes.push({
+					trait_type: trait,
+					value: traits[trait],
+				})
 			}
+		}
 
-			let attributes = []
-
-			for (var key in raw) {
-				if (raw.hasOwnProperty(key)) {
-					attributes.push({
-						trait_type: key,
-						value: raw[key],
-					})
-				}
-			}
-
-			return {
-				description: `Experimental Storytelling`,
-				name: `Token #${tokenId}`,
-				attributes,
-				image: `https://titanbornes.herokuapp.com/api/image/${data.tokenId}`
-			}
+		return {
+			description: `Experimental Storytelling`,
+			name: `Token #${tokenId}`,
+			attributes,
+			image: `https://titanbornes.herokuapp.com/api/image/${tokenId}`,
+		}
 	} catch (error) {
 		console.error(`${error}`.red.inverse)
 	}

@@ -1,14 +1,37 @@
 const GIFEncoder = require('gif-encoder-2')
-const { Canvas } = require('canvas-constructor/cairo')
+const { Canvas, registerFont } = require('canvas-constructor/cairo')
 const canvas = require('canvas')
 const colors = require('colors')
-const { createWriteStream, readdir } = require('fs')
+const { readdir } = require('fs')
 const { promisify } = require('util')
 const path = require('path')
+const getGreekNumeric = require('../helpers/getGreekNumeric')
 
-module.exports = async function buildImage(tokenId, traits) {
-	try {
-		if (traits.animated) {
+module.exports = {
+	buildStaticImage: async function (tokenId, traits) {
+		try {
+			const base = await canvas.loadImage(
+				path.resolve('public/images/base.png')
+			)
+
+			const logo = await canvas.loadImage(
+				path.resolve('public/images/logo.png')
+			)
+
+			registerFont(path.resolve('public/fonts/Open_Sans/OpenSans-Regular.ttf'), {family: 'OpenSans'})
+
+			return new Canvas(793, 850)
+				.printImage(base, 0, 0, 793, 850)
+				.printImage(logo, 793 / 10, 850 / 1.4, 867 / 3, 480 / 3)
+				.setTextFont('28px OpenSans')
+				.printText(await getGreekNumeric(4), 130,150)
+				.toBuffer()
+		} catch (error) {
+			console.error(`${error}`.red.inverse)
+		}
+	},
+	buildAnimatedImage: async function (tokenId, traits) {
+		try {
 			const readdirAsync = promisify(readdir)
 			const imagesFolder = path.resolve('public/images/numbers')
 
@@ -35,23 +58,8 @@ module.exports = async function buildImage(tokenId, traits) {
 
 			encoder.finish()
 			return encoder.out.getData()
-		} else {
-			const base = await canvas.loadImage(
-				path.resolve('public/images/base.png')
-			)
-
-			const logo = await canvas.loadImage(
-				path.resolve('public/images/logo.png')
-			)
-
-			const image = new Canvas(793, 850)
-				.printImage(base, 0, 0, 793, 850)
-				.printImage(logo, 793 / 10, 850 / 1.4, 867 / 3, 480 / 3)
-				.toBuffer()
-
-			return image
+		} catch (error) {
+			console.error(`${error}`.red.inverse)
 		}
-	} catch (error) {
-		console.error(`${error}`.red.inverse)
-	}
+	},
 }
