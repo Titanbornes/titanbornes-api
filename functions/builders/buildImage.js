@@ -18,13 +18,16 @@ module.exports = {
 				path.resolve('public/images/logo.png')
 			)
 
-			registerFont(path.resolve('public/fonts/Open_Sans/OpenSans-Regular.ttf'), {family: 'OpenSans'})
+			registerFont(
+				path.resolve('public/fonts/Open_Sans/OpenSans-Regular.ttf'),
+				{ family: 'OpenSans' }
+			)
 
 			return new Canvas(793, 850)
 				.printImage(base, 0, 0, 793, 850)
 				.printImage(logo, 793 / 10, 850 / 1.4, 867 / 3, 480 / 3)
 				.setTextFont('28px OpenSans')
-				.printText(await getGreekNumeric(4), 130,150)
+				.printText(await getGreekNumeric(4), 130, 150)
 				.toBuffer()
 		} catch (error) {
 			console.error(`${error}`.red.inverse)

@@ -3,7 +3,6 @@ const colors = require('colors')
 const axios = require('axios')
 const url = require('url')
 require('dotenv').config()
-const path = require('path')
 const buildTraits = require('../functions/builders/buildTraits')
 const {
 	buildAnimatedImage,
@@ -19,8 +18,6 @@ const getImage = asyncHandler(async (req, res) => {
 		const tokenId = req.params.tokenId
 
 		const tokenSubgraphData = await querySubgraph(tokenId)
-
-		console.log(tokenSubgraphData)
 
 		if (!tokenSubgraphData) {
 			res.sendStatus(404)

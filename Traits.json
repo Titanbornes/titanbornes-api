@@ -1,0 +1,245 @@
+{
+	"eyes": {
+		"Reapers": {
+			"Closed": {
+				"minimum": 1,
+				"chance": 100
+			},
+			"Yellow": {
+				"minimum": 2,
+				"chance": 22
+			},
+			"Ruby": {
+				"minimum": 2,
+				"chance": 22
+			},
+			"Cobalt": {
+				"minimum": 2,
+				"chance": 22
+			},
+			"Green": {
+				"minimum": 2,
+				"chance": 22
+			},
+			"White": {
+				"minimum": 2,
+				"chance": 12
+			},
+			"Glasses": {
+				"minimum": 4,
+				"chance": 10
+			},
+			"Sunglasses": {
+				"minimum": 4,
+				"chance": 10
+			},
+			"Bloody": {
+				"minimum": 5,
+				"chance": 10
+			},
+			"Pierced_Eyebrow": {
+				"minimum": 5,
+				"chance": 10
+			},
+			"Eye_Cover": {
+				"minimum": 6,
+				"chance": 10
+			},
+			"Galaxy": {
+				"minimum": 8,
+				"chance": 5
+			}
+		}
+	},
+	"head": {
+		"Tricksters": {
+			"Headband": {
+				"minimum": 3,
+				"chance": 15
+			},
+			"Bandana": {
+				"minimum": 3,
+				"chance": 15
+			},
+			"Horn_Incomplete": {
+				"minimum": 3,
+				"chance": 30
+			},
+			"Pilot_Glasses": {
+				"minimum": 3,
+				"chance": 30
+			},
+			"Horn_Complete": {
+				"minimum": 4,
+				"chance": 15,
+				"pre": "Horn_Incomplete"
+			}
+		},
+		"Reapers": {}
+	},
+	"hair": {
+		"Tricksters": {
+			"Afro": {
+				"minimum": 1,
+				"chance": 5
+			}
+		}
+	},
+	"tattoo": {
+		"None": {
+			"minimum": 1,
+			"chance": 60
+		},
+		"Tattoo_1": {
+			"minimum": 1,
+			"chance": 10
+		},
+		"Tattoo_2": {
+			"minimum": 1,
+			"chance": 10
+		},
+		"Tattoo_3": {
+			"minimum": 1,
+			"chance": 10
+		},
+		"Tattoo_4": {
+			"minimum": 1,
+			"chance": 10
+		}
+	},
+	"face": {
+		"Tricksters": {
+			"Normal": {
+				"minimum": 1,
+				"chance": 60
+			},
+			"Splash": {
+				"minimum": 2,
+				"chance": 5
+			},
+			"Oni": {
+				"minimum": 4,
+				"chance": 5
+			},
+			"Kitsune": {
+				"minimum": 4,
+				"chance": 5
+			},
+			"Tengu": {
+				"minimum": 4,
+				"chance": 5
+			}
+		}
+	},
+	"ear": {
+		"Tricksters": {
+			"None": {
+				"minimum": 1,
+				"chance": 70
+			},
+			"Earring": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Earring_Gold": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Hanafuda_Basic": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Hanafuda_2": {
+				"minimum": 3,
+				"chance": 10
+			},
+			"Hanafuda_3": {
+				"minimum": 5,
+				"chance": 10
+			},
+			"Hanafuda_Gold": {
+				"minimum": 5,
+				"chance": 5
+			},
+			"Piercing": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Piercing_Gold": {
+				"minimum": 5,
+				"chance": 10
+			},
+			"Earphone_SpiralCord": {
+				"minimum": 1,
+				"chance": 10
+			}
+		}
+	},
+	"mouth": {
+		"Tricksrers": {
+			"Piercing_Chain": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Piercing_Lip": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Cigarette": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Joint": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Lollipop": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Bubble": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Blood": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Tongue_Out_Front": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Tongue_Out_Aside": {
+				"minimum": 1,
+				"chance": 10
+			},
+			"Tongue_Out_Up": {
+				"minimum": 1,
+				"chance": 10
+			}
+		}
+	},
+	"hand": {},
+	"neck": {},
+	"clothing": {},
+	"element": {
+		"Tricksters": {
+			"Fire": {
+				"minimum": 10,
+				"chance": 50
+			},
+			"Lightning": {
+				"minimum": 10,
+				"chance": 50
+			},
+			"Water": {
+				"minimum": 10,
+				"chance": 50
+			},
+			"Sand": {
+				"minimum": 10,
+				"chance": 50
+			}
+		}
+	}
+}
