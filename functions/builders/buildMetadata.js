@@ -1,17 +1,14 @@
 const colors = require('colors')
-const buildTraits = require('./buildTraits')
 
-module.exports = async function buildMetadata(tokenId, tokenSubgraphData) {
+module.exports = async function buildMetadata(tokenId, traits) {
 	try {
 		let attributes = []
 
-		const traits = await buildTraits(tokenId, tokenSubgraphData)
-
-		for (let trait in traits) {
-			if (traits.hasOwnProperty(trait)) {
+		for (let key in traits) {
+			if (traits.hasOwnProperty(key)) {
 				attributes.push({
-					trait_type: trait,
-					value: traits[trait],
+					trait_type: key,
+					value: traits[key].name ? traits[key].name : traits[key],
 				})
 			}
 		}

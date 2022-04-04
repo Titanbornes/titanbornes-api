@@ -1,5 +1,35 @@
 {
-	"eyes": {
+	"Element": {
+		"Reapers": {
+			"Fire": {
+				"minimum": 1,
+				"weight": 34
+			},
+			"Lightning": {
+				"minimum": 1,
+				"weight": 33
+			},
+			"Water": {
+				"minimum": 1,
+				"weight": 33
+			}
+		},
+		"Tricksters": {
+			"Fire": {
+				"minimum": 1,
+				"weight": 34
+			},
+			"Lightning": {
+				"minimum": 1,
+				"weight": 33
+			},
+			"Water": {
+				"minimum": 1,
+				"weight": 33
+			}
+		}
+	},
+	"Eyes": {
 		"Reapers": {
 			"Slumber": {
 				"minimum": 1,
@@ -37,21 +67,25 @@
 				"minimum": 5,
 				"weight": 10
 			},
-			"Pierced_Eyebrow": {
+			"Pierced Eyebrow": {
 				"minimum": 5,
 				"weight": 10
 			},
-			"Eye_Cover": {
+			"Eye Cover": {
 				"minimum": 6,
 				"weight": 10
 			},
 			"Galaxy": {
 				"minimum": 8,
 				"weight": 5
+			},
+			"Transcendent": {
+				"minimum": 10,
+				"weight": 100
 			}
 		}
 	},
-	"head": {
+	"Head": {
 		"Reapers": {
 			"Normal": {
 				"minimum": 1,
@@ -80,7 +114,7 @@
 			}
 		}
 	},
-	"hair": {
+	"Hair": {
 		"Reapers": {
 			"Normal": {
 				"minimum": 1,
@@ -96,55 +130,45 @@
 			}
 		}
 	},
-	"tattoo": {
-		"None": {
-			"minimum": 1,
-			"weight": 60
+	"Face": {
+		"Reapers": {
+			"Normal": {
+				"minimum": 1,
+				"weight": 100
+			}
 		},
-		"Tattoo_1": {
-			"minimum": 1,
-			"weight": 10
-		},
-		"Tattoo_2": {
-			"minimum": 1,
-			"weight": 10
-		},
-		"Tattoo_3": {
-			"minimum": 1,
-			"weight": 10
-		},
-		"Tattoo_4": {
-			"minimum": 1,
-			"weight": 10
-		}
-	},
-	"face": {
 		"Tricksters": {
 			"Normal": {
 				"minimum": 1,
-				"weight": 60
+				"weight": 100
 			},
-			"Splash": {
-				"minimum": 2,
-				"weight": 5
+			"Tattoo_1": {
+				"minimum": 1,
+				"weight": 10
 			},
-			"Oni": {
-				"minimum": 4,
-				"weight": 5
+			"Tattoo_2": {
+				"minimum": 1,
+				"weight": 10
 			},
-			"Kitsune": {
-				"minimum": 4,
-				"weight": 5
+			"Tattoo_3": {
+				"minimum": 1,
+				"weight": 10
 			},
-			"Tengu": {
-				"minimum": 4,
-				"weight": 5
+			"Tattoo_4": {
+				"minimum": 1,
+				"weight": 10
 			}
 		}
 	},
-	"ear": {
+	"Ear": {
+		"Reapers": {
+			"Normal": {
+				"minimum": 1,
+				"weight": 100
+			}
+		},
 		"Tricksters": {
-			"None": {
+			"Normal": {
 				"minimum": 1,
 				"weight": 70
 			},
@@ -186,8 +210,26 @@
 			}
 		}
 	},
-	"mouth": {
-		"Tricksrers": {
+	"Mouth": {
+		"Reapers": {
+			"Normal": {
+				"minimum": 1,
+				"weight": 100
+			},
+			"Oni": {
+				"minimum": 4,
+				"weight": 5
+			},
+			"Kitsune": {
+				"minimum": 4,
+				"weight": 5
+			},
+			"Tengu": {
+				"minimum": 4,
+				"weight": 5
+			}
+		},
+		"Tricksters": {
 			"Piercing_Chain": {
 				"minimum": 1,
 				"weight": 10
@@ -230,26 +272,73 @@
 			}
 		}
 	},
-	"hand": {},
-	"neck": {},
-	"clothing": {},
-	"element": {
+	"Hand": {
+		"Reapers": {
+			"Normal": {
+				"minimum": 1,
+				"weight": 80
+			},
+			"Katana Unsheathed": {
+				"minimum": 1,
+				"weight": 10
+			},
+			"Katana Sheathed": {
+				"minimum": 1,
+				"weight": 10
+			}
+		},
 		"Tricksters": {
-			"Fire": {
-				"minimum": 10,
-				"weight": 50
+			"Normal": {
+				"minimum": 1,
+				"weight": 100
 			},
-			"Lightning": {
-				"minimum": 10,
-				"weight": 50
+			"Ring": {
+				"minimum": 4,
+				"weight": 5
 			},
-			"Water": {
-				"minimum": 10,
-				"weight": 50
+			"Driver Gloves": {
+				"minimum": 4,
+				"weight": 5
 			},
-			"Sand": {
-				"minimum": 10,
-				"weight": 50
+			"Titan Ring": {
+				"minimum": 4,
+				"weight": 5
+			}
+		}
+	},
+	"Neck": {
+		"Reapers": {
+			"Normal": {
+				"minimum": 1,
+				"weight": 100
+			},
+			"Beads": {
+				"minimum": 4,
+				"weight": 5
+			},
+			"Bandage": {
+				"minimum": 4,
+				"weight": 5
+			},
+			"Headphone": {
+				"minimum": 4,
+				"weight": 5
+			}
+		}
+	},
+	"Clothing": {
+		"Reapers": {
+			"Bomber": {
+				"minimum": 1,
+				"weight": 80
+			},
+			"Jumpsuit": {
+				"minimum": 1,
+				"weight": 10
+			},
+			"Yankee": {
+				"minimum": 1,
+				"weight": 10
 			}
 		}
 	}

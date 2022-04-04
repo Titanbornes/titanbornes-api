@@ -1,7 +1,5 @@
 const asyncHandler = require('express-async-handler')
 const colors = require('colors')
-const axios = require('axios')
-const url = require('url')
 require('dotenv').config()
 const buildTraits = require('../functions/builders/buildTraits')
 const {
@@ -24,13 +22,14 @@ const getImage = asyncHandler(async (req, res) => {
 		} else {
 			const traits = await buildTraits(tokenId, tokenSubgraphData)
 
-			const image = traits.animated
-				? buildAnimatedImage(tokenId, traits)
+			const image = traits.Animated
+				? await buildAnimatedImage(tokenId, traits)
 				: await buildStaticImage(tokenId, traits)
 
 			res.set({
-				'Content-Type': traits.animated ? 'image/gif' : 'image/png',
+				'Content-Type': traits.Animated ? 'image/gif' : 'image/png',
 			})
+
 			res.send(image)
 		}
 	} catch (error) {

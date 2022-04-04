@@ -5,16 +5,15 @@ const seedrandom = require('seedrandom')
 module.exports = async function getTrait(
 	traitName,
 	tokenId,
-	fusionCount,
-	faction,
-	generation,
+	tokenSubgraphData,
 	object
 ) {
 	try {
+		const { fusionCount, faction, generation } = tokenSubgraphData
+
 		const target = faction == 'Reapers' ? object.Reapers : object.Tricksters
 
 		for (let i = fusionCount; i > 0; i--) {
-			console.error(`Searching in FUSION #${i}` .cyan)
 			let eligibles = []
 
 			for (const key in target) {
@@ -34,7 +33,8 @@ module.exports = async function getTrait(
 				const fetchedIndex = Math.floor(distribution.length * rng())
 
 				const trait = eligibles[distribution[fetchedIndex]]
-				if (trait) return trait
+
+				if (trait != null && trait != undefined) return trait
 			}
 		}
 	} catch (error) {

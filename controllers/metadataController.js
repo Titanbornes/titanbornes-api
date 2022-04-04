@@ -4,6 +4,7 @@ const url = require('url')
 const path = require('path')
 const buildMetadata = require('../functions/builders/buildMetadata')
 const querySubgraph = require('../functions/helpers/querySubgraph')
+const buildTraits = require('../functions/builders/buildTraits')
 
 // @desc    Connect a new user
 // @route   POST /api/users/connect
@@ -17,7 +18,9 @@ const getMetadata = asyncHandler(async (req, res) => {
 		if (!tokenSubgraphData) {
 			res.sendStatus(404)
 		} else {
-			res.json(await buildMetadata(tokenId, tokenSubgraphData))
+			const traits = await buildTraits(tokenId, tokenSubgraphData)
+
+			res.json(await buildMetadata(tokenId, traits))
 		}
 	} catch (error) {
 		console.error(`${error}`.red.inverse)
