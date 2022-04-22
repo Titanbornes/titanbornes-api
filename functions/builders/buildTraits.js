@@ -1,77 +1,33 @@
 const colors = require('colors')
-const traits = require('../../Traits.json')
-const getTrait = require('../helpers/getTrait')
+const traits = require('../../data/Traits.json')
+const seededRandomNumberInRange = require('../helpers/seededRandomNumberInRange')
 
 module.exports = async function buildTraits(tokenId, tokenSubgraphData) {
 	try {
 		const { fusionCount, faction, generation } = tokenSubgraphData
+
+		const Element =
+			traits.Element[
+				seededRandomNumberInRange(
+					fusionCount + faction + generation,
+					0,
+					3
+				)
+			]
 
 		return {
 			Fusions: fusionCount,
 			Faction: faction,
 			Generation: generation,
 			Animated: fusionCount > 4 ? true : false,
-			Transcendent: fusionCount > 9 ? true : false,
-			Element: await getTrait(
-				'Element',
-				tokenId,
-				tokenSubgraphData,
-				traits.Element
-			),
-			Eyes: await getTrait(
-				'Eyes',
-				tokenId,
-				tokenSubgraphData,
-				traits.Eyes
-			),
-			Head: await getTrait(
-				'Head',
-				tokenId,
-				tokenSubgraphData,
-				traits.Head
-			),
-			Hair: await getTrait(
-				'Hair',
-				tokenId,
-				tokenSubgraphData,
-				traits.Hair
-			),
-			Face: await getTrait(
-				'Face',
-				tokenId,
-				tokenSubgraphData,
-				traits.Face
-			),
-			Ear: await getTrait(
-				'Ear',
-				tokenId,
-				tokenSubgraphData,
-				traits.Ear
-			),
-			Mouth: await getTrait(
-				'Mouth',
-				tokenId,
-				tokenSubgraphData,
-				traits.Mouth
-			),
-			Hand: await getTrait(
-				'Hand',
-				tokenId,
-				tokenSubgraphData,
-				traits.Hand
-			),
-			Neck: await getTrait(
-				'Neck',
-				tokenId,
-				tokenSubgraphData,
-				traits.Neck
-			),
-			Clothing: await getTrait(
-				'Neck',
-				tokenId,
-				tokenSubgraphData,
-				traits.Clothing
-			),
+			Element,
+			Eyes: await traits[faction][fusionCount].Eyes,
+			Head: await traits[faction][fusionCount].Head,
+			Hair: await traits[faction][fusionCount].Hair,
+			Face: await traits[faction][fusionCount].Face,
+			Ear: await traits[faction][fusionCount].Ear,
+			Hand: await traits[faction][fusionCount].Hand,
+			Neck: await traits[faction][fusionCount].Neck,
 		}
 	} catch (error) {
 		console.error(`${error}`.red.inverse)

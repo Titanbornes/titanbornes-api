@@ -8,7 +8,7 @@ module.exports = async function buildMetadata(tokenId, traits) {
 			if (traits.hasOwnProperty(key)) {
 				attributes.push({
 					trait_type: key,
-					value: traits[key].name ? traits[key].name : traits[key],
+					value: traits[key],
 				})
 			}
 		}
