@@ -2,6 +2,7 @@
 	"Reapers": [
 		{
 			"Level": "01",
+			"Background": "Normal",
 			"Horn": "None",
 			"Head": "Normal",
 			"Hair": "Normal",
@@ -12,186 +13,205 @@
 		},
 		{
 			"Level": "02",
-			"Horn": "Incomplete",
+			"Background": "Normal",
+			"Horn": "Incomplete", // @note
 			"Head": "Normal",
 			"Hair": "Normal",
-			"Ear": "Ring",
+			"Ear": "Ring", // @note
 			"Face": "Normal",
-			"Weapon": "Sword", // https://nl.pinterest.com/pin/588916088785057169/
+			"Weapon": "Sheathed Katana", // @note // https://nl.pinterest.com/pin/491314640611661927/
 			"Neck": "Normal"
 		},
 		{
 			"Level": "03",
+			"Background": "Normal",
 			"Horn": "Incomplete",
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Ring",
-			"Face": "1st. Tattoo",
-			"Weapon": "Sword",
-			"Neck": "Chain"
+			"Face": "1st. Tattoo", // @note
+			"Weapon": "Sheathed Katana",
+			"Neck": "Chain" // @note
 		},
 		{
 			"Level": "04",
-			"Horn": "Semi-Complete",
-			"Head": "Basic Crown",
+			"Background": "Normal",
+			"Horn": "Incomplete",
+			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Ring",
-			"Face": "2nd. Tattoo",
-			"Weapon": "Sword",
+			"Face": "2nd. Tattoo", // @note
+			"Weapon": "Activated Katana", // @note // https://nl.pinterest.com/pin/491314640611544859/
 			"Neck": "Chain"
 		},
 		{
 			"Level": "05",
-			"Horn": "Semi-Complete",
-			"Head": "Basic Crown",
+			"Background": "Normal",
+			"Horn": "Incomplete",
+			"Head": "1st. Crown", // @note
 			"Hair": "Normal",
-			"Ear": "Kunai",
-			"Face": "3rd. Tattoo",
-			"Weapon": "Activated Sword",
-			"Neck": "Beads" // https://nl.pinterest.com/pin/606508274822164228/
+			"Ear": "Ring",
+			"Face": "3rd. Tattoo", // @note
+			"Weapon": "Activated Katana",
+			"Neck": "Chain"
 		},
 		{
 			"Level": "06",
-			"Horn": "Semi-Complete",
-			"Head": "2nd. Crown",
+			"Background": "Normal",
+			"Horn": "Semi-Complete", // @note
+			"Head": "1st. Crown",
 			"Hair": "Normal",
-			"Ear": "Kunai",
-			"Face": "Cover Mask", // https://www.pinterest.co.uk/pin/491314640611661747/
-			"Weapon": "Activated Sword",
-			"Neck": "Beads"
+			"Ear": "Kunai", // @note
+			"Face": "3rd. Tattoo",
+			"Weapon": "Halo Katana", // @note //
+			"Neck": "Chain"
 		},
 		{
 			"Level": "07",
-			"Horn": "Complete",
-			"Head": "2nd. Crown",
+			"Background": "Normal",
+			"Horn": "Semi-Complete",
+			"Head": "1st. Crown",
 			"Hair": "Normal",
 			"Ear": "Kunai",
-			"Face": "Cover Mask Tattoo",
-			"Weapon": "Activated Sword",
-			"Neck": "Beads"
+			"Face": "Cover Mask", // @note // https://nl.pinterest.com/pin/491314640611661849/
+			"Weapon": "Halo Katana",
+			"Neck": "Beads" // @note // https://nl.pinterest.com/pin/606508274822164228/
 		},
 		{
 			"Level": "08",
-			"Horn": "Complete",
-			"Head": "Halo Crown",
+			"Background": "Normal",
+			"Horn": "Complete", // @note
+			"Head": "2nd. Crown", // @note
 			"Hair": "Normal",
-			"Ear": "Hanafuda",
-			"Face": "Lower Jaw Mask",
-			"Weapon": "Activated Sword",
-			"Neck": "Vanguard" // https://nl.pinterest.com/pin/491314640611523645/
+			"Ear": "Hanafuda", // @note
+			"Face": "Cover Mask",
+			"Weapon": "Weaved Katana", // @note // https://nl.pinterest.com/pin/491314640611664226/
+			"Neck": "Beads"
 		},
 		{
 			"Level": "09",
+			"Background": "Normal",
 			"Horn": "Complete",
-			"Head": "Halo Crown",
+			"Head": "2nd. Crown",
 			"Hair": "Normal",
 			"Ear": "Hanafuda",
-			"Face": "Lower Jaw Mask", // https://www.pinterest.co.uk/pin/491314640611661747/
-			"Weapon": "Blazing Sword",
-			"Neck": "Vanguard"
+			"Face": "Lower Jaw Mask", // @note // https://www.pinterest.co.uk/pin/491314640611661747/
+			"Weapon": "Weaved Katana",
+			"Neck": "Vanguard" // @note // https://nl.pinterest.com/pin/491314640611523645/
 		},
 		{
 			"Level": "10",
+			"Background": "Normal",
 			"Horn": "Complete",
-			"Head": "Halo Crown",
-			"Hair": "Grown",
-			"Ear": "Hanafuda",
+			"Head": "2nd. Crown",
+			"Hair": "Normal",
+			"Ear": "Galaxy Spiral", // @note
 			"Face": "Lower Jaw Mask",
-			"Weapon": "Blazing Sword",
+			"Weapon": "Pointed Vanguard Sword", // @note // https://nl.pinterest.com/pin/491314640611770327/
 			"Neck": "Vanguard"
 		},
 		{
 			"Level": "11",
-			"Horn": "Complete",
-			"Head": "Demon Crown", // https://nl.pinterest.com/pin/491314640611495878/
-			"Hair": "Grown",
+			"Background": "Normal",
+			"Horn": "Growth", // @note // https://nl.pinterest.com/pin/491314640611544871/
+			"Head": "2nd. Crown",
+			"Hair": "Normal",
 			"Ear": "Galaxy Spiral",
-			"Face": "Skull Jaw Mask", // https://www.pinterest.co.uk/pin/491314640611497911/
-			"Weapon": "Sword",
-			"Neck": "Shackles" // https://nl.pinterest.com/pin/491314640611523681/
+			"Face": "Skull Jaw Mask", // @note // https://www.pinterest.co.uk/pin/491314640611497911/
+			"Weapon": "Pointed Vanguard Sword",
+			"Neck": "Shackles" // @note // https://nl.pinterest.com/pin/491314640611523681/
 		},
 		{
 			"Level": "12",
-			"Horn": "Complete",
-			"Head": "Demon Crown",
-			"Hair": "Grown",
+			"Background": "Normal",
+			"Horn": "Growth",
+			"Head": "Halo Crown", // @note
+			"Hair": "Normal",
 			"Ear": "Galaxy Spiral",
 			"Face": "Skull Jaw Mask",
-			"Weapon": "Sword",
+			"Weapon": "Flowing Element Sword", // @note
 			"Neck": "Shackles"
 		},
 		{
 			"Level": "13",
-			"Horn": "Complete",
-			"Head": "Demon Crown",
-			"Hair": "Grown",
-			"Ear": "Galaxy Spiral",
+			"Background": "Normal",
+			"Horn": "Growth",
+			"Head": "Halo Crown",
+			"Hair": "Disintegrating", // @note // https://nl.pinterest.com/pin/491314640611506504/
+			"Ear": "Divine", // @note
 			"Face": "Skull Jaw Mask",
-			"Weapon": "Sword",
+			"Weapon": "Flowing Element Sword",
 			"Neck": "Shackles"
 		},
 		{
 			"Level": "14",
-			"Horn": "Complete",
-			"Head": "Demon Crown",
-			"Hair": "Grown",
+			"Background": "Normal",
+			"Horn": "Growth",
+			"Head": "Demon Crown", // @note // https://nl.pinterest.com/pin/491314640611495878/
+			"Hair": "Disintegrating",
 			"Ear": "Divine",
-			"Face": "Hollow Mask", // https://www.pinterest.co.uk/pin/491314640611661772/
-			"Weapon": "Sword",
-			"Neck": "Halo"
+			"Face": "Skull Jaw Mask",
+			"Weapon": "Scale Sword",
+			"Neck": "Halo" // @note
 		},
 		{
 			"Level": "15",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "Halo", // @note
 			"Head": "Demon Crown",
-			"Hair": "Grown",
+			"Hair": "Disintegrating",
 			"Ear": "Divine",
-			"Face": "Hollow Mask",
-			"Weapon": "Sword",
+			"Face": "Hollow Mask", // @note // https://www.pinterest.co.uk/pin/491314640611661772/
+			"Weapon": "Scale Sword",
 			"Neck": "Halo"
 		},
 		{
 			"Level": "16",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "Halo",
 			"Head": "Demon Crown",
-			"Hair": "Grown",
-			"Ear": "Divine",
+			"Hair": "Disintegrating",
+			"Ear": "Hanging Dragon", // @note
 			"Face": "Hollow Mask",
-			"Weapon": "Sword",
+			"Weapon": "Lashe Sword", // @note
 			"Neck": "Halo"
 		},
 		{
 			"Level": "17",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "Halo",
 			"Head": "Normal",
-			"Hair": "Grown",
+			"Hair": "Disintegrating",
 			"Ear": "Hanging Dragon",
-			"Face": "Wolf Mask",
-			"Weapon": "Sword",
-			"Neck": "Bandage" // https://nl.pinterest.com/pin/491314640611497975/
+			"Face": "Wolf Mask", // @note
+			"Weapon": "Lashe Sword",
+			"Neck": "Bandage" // @note // https://nl.pinterest.com/pin/491314640611497975/
 		},
 		{
 			"Level": "18",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "Scaled Horn", // @note
 			"Head": "Normal",
-			"Hair": "Grown",
+			"Hair": "Disintegrating",
 			"Ear": "Hanging Dragon",
 			"Face": "Wolf Mask",
-			"Weapon": "Sword",
+			"Weapon": "Serpent Sword", // @note // https://nl.pinterest.com/pin/9992430413665267/
 			"Neck": "Bandage"
 		},
 		{
 			"Level": "19",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "Scaled Horn",
 			"Head": "Normal",
-			"Hair": "Grown",
+			"Hair": "Disintegrating",
 			"Ear": "Hanging Dragon",
 			"Face": "Wolf Mask",
-			"Weapon": "Sword",
+			"Weapon": "Serpent Sword",
 			"Neck": "Bandage"
 		},
 		{
 			"Level": "20",
+			"Background": "Normal",
 			"Horn": "Transcendence",
 			"Head": "Transcendence", // https://nl.pinterest.com/pin/491314640611506285/
 			"Hair": "Transcendence",
@@ -204,196 +224,216 @@
 	"Tricksters": [
 		{
 			"Level": "1",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "None",
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Normal",
-			"Face": "None",
+			"Face": "Normal",
 			"Weapon": "None",
 			"Neck": "Normal"
 		},
 		{
 			"Level": "2",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "Incomplete", // @note
 			"Head": "Normal",
 			"Hair": "Normal",
-			"Ear": "Pyramid",
-			"Face": "None",
-			"Weapon": "Staff", // https://nl.pinterest.com/pin/491314640611544280/
+			"Ear": "Pyramid", // @note
+			"Face": "Normal",
+			"Weapon": "Basic Staff", // @note // https://nl.pinterest.com/pin/53832158035233433/
 			"Neck": "Normal"
 		},
 		{
 			"Level": "3",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "Incomplete",
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Pyramid",
-			"Face": "1st. Tattoo",
-			"Weapon": "Staff",
-			"Neck": "Eye Tattoo" // https://nl.pinterest.com/pin/985231159891840/
+			"Face": "1st. Tattoo", // @note
+			"Weapon": "Basic Staff",
+			"Neck": "Eye Tattoo" // @note // https://nl.pinterest.com/pin/985231159891840/
 		},
 		{
 			"Level": "4",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "Incomplete",
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Pyramid",
-			"Face": "2nd. Tattoo",
-			"Weapon": "Staff",
-			"Neck": "ُSacred Tattoo"
+			"Face": "2nd. Tattoo", // @note
+			"Weapon": "Stoned Staff", // @note // https://nl.pinterest.com/pin/537758011761706816/
+			"Neck": "ُSacred Tattoo" // @note
 		},
 		{
 			"Level": "5",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "Semi-Complete", // @note
 			"Head": "Normal",
 			"Hair": "Normal",
-			"Ear": "Shuriken",
-			"Face": "Centric Mask", // https://nl.pinterest.com/pin/287315651218286400/
-			"Weapon": "Staff",
-			"Neck": "Kanji Tattoo"
+			"Ear": "Shuriken", // @note
+			"Face": "Centric Mask", // @note // https://nl.pinterest.com/pin/287315651218286400/
+			"Weapon": "Stoned Staff",
+			"Neck": "Kanji Tattoo" // @note
 		},
 		{
 			"Level": "6",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "Semi-Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Shuriken",
 			"Face": "Centric Mask",
-			"Weapon": "Staff",
+			"Weapon": "Evolved Stoned Staff", // @note // https://nl.pinterest.com/pin/537758011761706816/
 			"Neck": "Kanji Tattoo"
 		},
 		{
 			"Level": "7",
-			"Horn": "Complete",
+			"Background": "Normal",
+			"Horn": "Complete", // @note
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Shuriken",
 			"Face": "Centric Mask",
-			"Weapon": "Staff",
-			"Neck": "Piercings"
+			"Weapon": "Evolved Stoned Staff",
+			"Neck": "Piercings" // @note
 		},
 		{
 			"Level": "8",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
-			"Ear": "Hanafuda",
-			"Face": "Nightcore Mask", // https://nl.pinterest.com/pin/40462096631397336/
-			"Weapon": "Staff",
+			"Ear": "Hanafuda", // @note
+			"Face": "Nightcore Mask", // @note // https://nl.pinterest.com/pin/40462096631397336/
+			"Weapon": "Evolved Stoned Staff #2", // @note
 			"Neck": "Piercings"
 		},
 		{
 			"Level": "9",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Hanafuda",
 			"Face": "Nightcore Mask",
-			"Weapon": "Staff",
-			"Neck": "Moon Belt"
+			"Weapon": "Evolved Stoned Staff #2",
+			"Neck": "Moon Belt" // @note
 		},
 		{
 			"Level": "10",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
-			"Hair": "Normal",
+			"Hair": "Disintegrating", // @note // https://nl.pinterest.com/pin/491314640611516501/
 			"Ear": "Hanafuda",
 			"Face": "Nightcore Mask",
-			"Weapon": "Staff",
+			"Weapon": "Sun Stone Staff", // @note // https://nl.pinterest.com/pin/491314640611664281/
 			"Neck": "Moon Belt"
 		},
 		{
 			"Level": "11",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
-			"Ear": "Magic Sphere",
-			"Face": "Sabretooth Mask",
-			"Weapon": "Staff",
-			"Neck": "Sharpnel" // https://nl.pinterest.com/pin/491314640611661997/
+			"Ear": "Hanafuda",
+			"Face": "Sabretooth Mask", // @note
+			"Weapon": "Sun Stone Staff",
+			"Neck": "Sharpnel" // @note // https://nl.pinterest.com/pin/491314640611661997/
 		},
 		{
 			"Level": "12",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
-			"Ear": "Magic Sphere",
+			"Ear": "Magic Sphere", // @note
 			"Face": "Sabretooth Mask",
-			"Weapon": "Staff",
+			"Weapon": "Hovering Stone Staff", // @note // https://nl.pinterest.com/pin/491314640611664281/
 			"Neck": "Sharpnel"
 		},
 		{
 			"Level": "13",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Magic Sphere",
 			"Face": "Sabretooth Mask",
-			"Weapon": "Staff",
-			"Neck": "Moving Eye Necklace"
+			"Weapon": "Hovering Stone Staff",
+			"Neck": "Moving Eye Necklace" // @note
 		},
 		{
 			"Level": "14",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
-			"Ear": "Rune", // https://nl.pinterest.com/pin/73253931429625906/
-			"Face": "Ghost Mask", // https://www.pinterest.co.uk/pin/491314640611661682/
-			"Weapon": "Staff",
+			"Ear": "Rune", // @note // https://nl.pinterest.com/pin/73253931429625906/
+			"Face": "Ghost Mask", // @note // https://www.pinterest.co.uk/pin/491314640611661682/
+			"Weapon": "Orb Staff", // @note
 			"Neck": "Moving Eye Necklace"
 		},
 		{
 			"Level": "15",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Rune",
 			"Face": "Ghost Mask",
-			"Weapon": "Staff",
-			"Neck": "Triple Halo"
+			"Weapon": "Orb Staff",
+			"Neck": "Triple Halo" // @note
 		},
 		{
 			"Level": "16",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Rune",
 			"Face": "Ghost Mask",
-			"Weapon": "Staff",
+			"Weapon": "Growth Orb Staff", // @note // https://nl.pinterest.com/pin/491314640611668849/
 			"Neck": "Triple Halo"
 		},
 		{
 			"Level": "17",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
-			"Ear": "Hanging Dragon",
-			"Face": "Broken Kitsune Mask", // https://www.pinterest.co.uk/pin/491314640611661671/
-			"Weapon": "Staff",
-			"Neck": "Serpent"
+			"Ear": "Hanging Dragon", // @note
+			"Face": "Broken Kitsune Mask", // @note // https://www.pinterest.co.uk/pin/491314640611661671/
+			"Weapon": "Growth Orb Staff",
+			"Neck": "Serpent" // @note
 		},
 		{
 			"Level": "18",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Hanging Dragon",
 			"Face": "Broken Kitsune Mask",
-			"Weapon": "Staff",
+			"Weapon": "Fractured Orb", // @note // https://nl.pinterest.com/pin/491314640611664173/
 			"Neck": "Serpent"
 		},
 		{
 			"Level": "19",
+			"Background": "Normal",
 			"Horn": "Complete",
 			"Head": "Normal",
 			"Hair": "Normal",
 			"Ear": "Hanging Dragon",
 			"Face": "Broken Kitsune Mask",
-			"Weapon": "Staff",
+			"Weapon": "Fractured Orb",
 			"Neck": "Serpent"
 		},
 		{
 			"Level": "20",
+			"Background": "Normal",
 			"Horn": "Transcendence", // https://nl.pinterest.com/pin/491314640611506527/
 			"Head": "Transcendence",
 			"Hair": "Transcendence",
